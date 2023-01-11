@@ -20,7 +20,6 @@ class Search extends Component {
 
   loadAddressData = async (cep) => {
     const address = await getAddress(cep);
-    console.log(address);
     this.setState({
       cepSearch: address,
       isLoading: false,

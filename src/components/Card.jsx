@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 class Card extends Component {
   render() { 
@@ -7,8 +8,10 @@ class Card extends Component {
 
     return (
       <div className='card-state'>
-        <h2>{ name }</h2>
-        <p>{ `${uf}/${region}` }</p>
+        <Link to={ `/uf/${uf}`}>
+          <h2>{ name }</h2>
+          <p>{ `${uf}/${region}` }</p>
+        </Link>
       </div>
     );
   }

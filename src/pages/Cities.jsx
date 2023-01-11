@@ -35,10 +35,12 @@ class Cities extends Component {
           ) : (
             <>
               <h1>{ `Cidades de ${uf.toUpperCase()}` }</h1>
-              <table>
+              <table cellPadding="0" cellSpacing="0">
                 <thead>
-                  <th>Cidade</th>
-                  <th>Código IBGE</th>
+                  <tr>
+                    <td>Cidade</td>
+                    <td>Código IBGE</td>
+                  </tr>
                 </thead>
                 <tbody>
                   {
