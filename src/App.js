@@ -7,8 +7,6 @@ import NotFound from './pages/NotFound';
 import Search from './pages/Search';
 import './index.css';
 class App extends Component {
-
-
   render() { 
     return (
       <div className="container">
