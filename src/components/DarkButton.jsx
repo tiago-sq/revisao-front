@@ -6,6 +6,7 @@ class DarkButton extends Component {
     return (
       <button
         onClick={ handleIsDark }
+        className="dark-toggle"
       >
         { isDark ? 'Dark' : 'Light' }
       </button>
