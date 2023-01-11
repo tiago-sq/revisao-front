@@ -1,5 +1,5 @@
 import { Component } from 'react';
-
+import PropTypes from 'prop-types';
 class DarkButton extends Component {
   render() { 
     const { isDark, handleIsDark } = this.props;
@@ -14,4 +14,9 @@ class DarkButton extends Component {
   }
 }
  
+DarkButton.propTypes = {
+  isDark: PropTypes.bool.isRequired,
+  handleIsDark: PropTypes.func.isRequired,
+}
+
 export default DarkButton;
